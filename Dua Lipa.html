@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dua Lipa - Artist</title>
+        <link rel="stylesheet" href="/artist/artist.css">
+        <meta name="viewport" content="display-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+    <div class="container">
+
+      <!-- navbar -->
+        <div class="navbar">
+            <img src="../home/img/logo1.png" alt="Logo" class="logo">
+            <ul>
+                <li><a href="playlist.html">Playlist</a></li>
+                <li><a href="artistIndex.html">Artist</a></li>
+                <li><a href="About Us.html">About</a></li>
+                <li><a href="subscription.html">Subscription</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+        
+        <div class="content-information-beta"></div>
+
+        <div class="artist-container-layout2" id="artist-container-layout2">
+            <div class="artist-content-container-layout">
+                <div class="artist-title">
+                    <p id="artist-title">Artist</p>
+                </div>
+
+                <div class="container2">
+                    <div class="grid-container-2">
+                        <div class="item1">
+                            <div class="img-container">
+                                <img src='/artist/img/Dua Lipa2.png' width='70%' height='50%'>
+                            </div>
+                        </div>
+                        <div class="item2">
+                            <h2>Who is Dua Lipa?</h2>
+                            <br />snap
+                            <p><abbr title="Dua Lipa"> Dua Lipa </abbr>is an English singer, songwriter, and former model who has established herself as one of the leading artists of current time with the release of her eponymous debut album. 
+                                The album, which contains eight singles so far, includes the UK number-one single 'New Rules', as well as two more UK top-10 singles, 'Be the One' and 'IDGAF'. 
+                                Her best-selling single 'New Rules' has been a hit worldwide, charting on No.2 in Australia, No.6 in the US, and No.7 in Canada. 
+                                Lipa, who identifies her music as dark pop, began posting cover versions of songs by her favorite artists – such as P!nk and Nelly Furtado – on YouTube when she was 14. 
+                                She eventually signed a deal with Warner Music Group for her debut album. She has won two 'Brit Awards' for 'British Female Solo Artist' and 'British Breakthrough Act' in the latest edition of the event. 
+                                She is one of the frontrunners to record the theme song of an upcoming James Bond movie.
+                            </p>
+                            <br />
+                            <ul>
+                                <li>Birthday: August 22, 1995</li>
+                                <li>Nationality: British</li>
+                                <li>Age: 25 Years, 25 Year Old Females</li>
+                                <li>Sun Sign: Leo</li>
+                                <li>Born In: London</li>
+                                <li>City: London, England</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="iframe-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TUVcZfQe-Kw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+    </div>
+
+    <!-- content footer -->
+    <div class="footer-content">
+        <div class="footer-content-row1">
+              <img src="../home/img/logo1.png" alt="Logo" class="logo1">
+            
+              <div class="footer-information-cell-content">
+                <div class="footer-cell-col1">
+                  <p id="footer-title">Related Links</p><br>
+                  
+                  <a href="About Us.html" id="btn-footer"><p id="footer-text">About Us</p><br></a>
+                  <a href="subscription.html" id="btn-footer"><p id="footer-text">Subscription</p><br></a>
+                  <a href="artistIndex.html" id="btn-footer"><p id="footer-text">Artist</p><br></a>
+                  <a href="playlist.html" id="btn-footer"><p id="footer-text">Playlist</p><br></a>
+                  
+                </div>
+              </div>
+
+              <div class="footer-icon-list">
+                <a href="#" class="fa fa-facebook"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="fa fa-twitter"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="fa fa-instagram"></a>
+
+              </div>
+
+              <div class="copyright-footer">
+                <div class="footer-copyright-leftcol">
+                  <p id="footer-text2"><a href="#" id="btn-footer">Legal</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                                                
+                    <a href="#" id="btn-footer">Privacy Center</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" id="btn-footer">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" id="btn-footer">Cookies</a>
+                  </p>
+                </div>
+
+                <div class="footer-copyright-rightcol">
+                  <i class="fa fa-globe" style="font-size:20px;color:white"></i>
+                  <div class="position-icon-text1">
+                     <p id="footer-text">Malaysia</p>
+                  </div>
+                 
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <script>
+
+        // hide button show img
+        $(function(){
+            if($('#load-more').click(function(){
+                $('.content_img2').slice(0, 3).show();
+                $('#load-more').hide();
+                $('#artist-container-layout').height(860);
+                $('.artist-content-container-layout').height(780);
+            })
+            );
+
+        });
+
+        // reference
+
+        // --------------------------
+        //         $(function () {
+        // 		x=0;
+
+            
+        //     $('.content_img2').slice(0, 3).show();
+        //     if($('.content_img2').length != 0){
+        //         $('#load-more').show();
+        //     }
+        //     $('#loadMore').on('click', function (e) {
+        //         e.preventDefault();
+        //         x = x+3;
+        //         $(' .content_img2').slice(0, x).slideDown();
+        //     });
+        // });
+        // $ready(document).ready(function (){
+        //     $("").slice(0, 3).show();
+        //     if($(".content_img2:hidden").length != 0){
+        //         $("#load-more").show();
+        //     }
+        //     $("#load-more").on('click', function(e){
+        //         e.preventDefault();
+        //         $(".content_imgw:hidden").slice(0, 9).slideDown();
+        //         if($(".content_imgw:hidden").length == 0){
+        //             $("#load-more").fadeOut('slow');
+        //         }
+        //     })
+        // }
+        // )
+    </script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+.container {
+    height: 200vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.icon-header{
+    margin: 0 0 0 550px;
+}
+
+.logo {
+    height: 100px;
+    width: 160px;
+    cursor: pointer;
+}
+
+.statement1{
+    text-align: center;
+    margin: 5px;
+}
+
+.statement1 #title{
+    font-size: 20px;
+}
+
+.statement2{
+    font-size: 13px;
+}
+
+.statement3{
+    margin: -120px 0 0 500px;
+}
+
+/* ------------------------------------ */
+
+
+.content-login-via-facebook{
+    border-radius: 25px;
+    padding: 2px 0 2px 25px;
+    margin: 60px 0 0 370px;
+    width: 300px;
+    height: 50px;
+    background-color: #3b5998;
+}
+
+.facebook-sign-up{
+    margin: 0 0 0 90px;
+}
+
+.btn {
+    text-decoration: none; /* remove underline from anchors */
+  }
+
+  .fb {
+    background-color: #3B5998;
+    color: white;
+  }
+
+  .media-icon1{
+    padding: 15px 0 0 50px;
+    margin: auto;
+}
+
+/* --------------------------------------- */
+
+.content{
+    width: 500px;
+    height: 30px;
+    margin: 5px;
+    padding: 10px 0 0 400px;
+}
+
+.divider{
+    width: 450px;
+    margin: 0 50px 0 0;
+    position: relative;
+    display: block;
+    line-height: 1px;
+    border-top: 1px solid #8f8f8f;
+    
+}
+
+.form-content{
+    position: relative;
+    margin: 70px 30px 90px;
+    height: 700px;
+    width: 95%;    
+}
+
+.register-form{
+    height: 600px;
+    width: 700px;
+    padding: 10px 0 0 150px;
+    margin: 1px 0 0 240px;
+}
+
+#input-box{
+    height: 30px;
+    width: 400px;
+}
+
+/* ---------------------------- */
+
+.date-input{
+    margin: 1px;
+    width: 410px;
+    height: 100px;
+
+}
+
+#day-input{
+    height: 36px;
+    width: 60px;
+}
+
+.day-input{
+    margin: -77px 0 0 200px;
+
+}
+
+.year-input{
+    margin: -77px 0 0 300px;
+}
+
+#year-input{
+    height: 36px;
+    width: 100px;
+}
+
+.month-input .day-input{
+    position: relative;
+}
+
+select{
+    height: 40px;
+    width: 150px;
+}
+
+/* ------------------------------------- */
+
+.gender-select{
+    margin: -15px 0 0 4px;
+    padding: 10px 0;
+    width: 410px;
+    height: 30px;
+}
+
+#checkcircle{
+    border-radius: 25px;
+}
+
+.accept-terms{
+    margin: 50px 0 0 395px;
+    width: 490px;
+    height: 50px;
+}
+
+.agreement-etc-content{
+    margin: -10px 0 0 400px;
+    padding: 7px 0 0 -50px;
+    width: 430px;
+    height: 300px;
+
+}
+
+.agreement-etc-content p{
+    font-size: 12px;
+    text-align: justify;
+}
+
+.agreement and terms{
+    margin: 1px;
+
+}
+
+.center-btn-register{
+    margin: 1px 0 0 -300px;
+}
+
+.register-btn{
+    border-radius: 25px;
+    padding: 2px 0 2px 25px;
+    margin: 60px 0 0 370px;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border: solid black 1px;
+}
+
+.sign{
+    background-color:white;
+    color: black;
+}

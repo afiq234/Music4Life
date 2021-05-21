@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shawn Mendes - Artist</title>
+        <link rel="stylesheet" href="/artist/artist.css">
+        <meta name="viewport" content="display-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+    <div class="container">
+
+      <!-- navbar -->
+        <div class="navbar">
+            <img src="../home/img/logo1.png" alt="Logo" class="logo">
+            <ul>
+                <li><a href="playlist.html">Playlist</a></li>
+                <li><a href="artistIndex.html">Artist</a></li>
+                <li><a href="About Us.html">About</a></li>
+                <li><a href="subscription.html">Subscription</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+        
+        <div class="content-information-beta"></div>
+
+        <div class="artist-container-layout2" id="artist-container-layout2">
+            <div class="artist-content-container-layout">
+                <div class="artist-title">
+                    <p id="artist-title">Artist</p>
+                </div>
+
+                <div class="container2">
+                    <div class="grid-container-2">
+                        <div class="item1">
+                            <div class="img-container">
+                                <img src='/artist/img/Shawn Mendes2.jpg' width='80%' height='100%'>
+                            </div>
+                        </div>
+                        <div class="item2">
+                            <h2>Who is Shawn Mendes?</h2>
+                            <br />
+                            <p>The teen population in the United States dominates the music market and as expected, their preferences are for musicians more in line with their age. 
+                                Given this, young talent has been on the rise and youngsters have been very well received by the US market. 
+                                Shawn Mendes is one such young blood who has done very well at a young age by appealing to the mass population. 
+                                He has flourished both as a singer and songwriter and has also collaborated with many other young stars to further his stardom. 
+                                His albums have sold thousands of copies and have all done very well on the Billboard charts, being widely appreciated by the public. 
+                                Shawn Mendes has also done well in rankings relating to other people of his age and this is a tribute to how fast he has climbed up the ladder of success. 
+                                Shawn Mendes has also been involved in his share of controversies and this has if anything furthered his popularity among the masses. 
+                                Shawn has thus burst on to the scene with a bang and his future looks bright in the years to come.
+                            </p>
+                            <br />
+                            <ul>
+                                <li>Birthday: August 8, 1998</li>
+                                <li>Nationality: Canadian</li>
+                                <li>Age: 22 Years, 22 Year Old Males</li>
+                                <li>Sun Sign: Leo</li>
+                                <li>Born In: Toronto, Canada</li>
+                                <li>City: Toronto, Canada</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="iframe-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fHeQemJJQII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+    </div>
+
+    <!-- content footer -->
+    <div class="footer-content">
+        <div class="footer-content-row1">
+              <img src="../home/img/logo1.png" alt="Logo" class="logo1">
+            
+              <div class="footer-information-cell-content">
+                <div class="footer-cell-col1">
+                  <p id="footer-title">Related Links</p><br>
+                  
+                  <a href="About Us.html" id="btn-footer"><p id="footer-text">About Us</p><br></a>
+                  <a href="subscription.html" id="btn-footer"><p id="footer-text">Subscription</p><br></a>
+                  <a href="artistIndex.html" id="btn-footer"><p id="footer-text">Artist</p><br></a>
+                  <a href="playlist.html" id="btn-footer"><p id="footer-text">Playlist</p><br></a>
+                  
+                </div>
+              </div>
+
+              <div class="footer-icon-list">
+                <a href="#" class="fa fa-facebook"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="fa fa-twitter"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="fa fa-instagram"></a>
+
+              </div>
+
+              <div class="copyright-footer">
+                <div class="footer-copyright-leftcol">
+                  <p id="footer-text2"><a href="#" id="btn-footer">Legal</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                                                
+                    <a href="#" id="btn-footer">Privacy Center</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" id="btn-footer">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" id="btn-footer">Cookies</a>
+                  </p>
+                </div>
+
+                <div class="footer-copyright-rightcol">
+                  <i class="fa fa-globe" style="font-size:20px;color:white"></i>
+                  <div class="position-icon-text1">
+                     <p id="footer-text">Malaysia</p>
+                  </div>
+                 
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <script>
+
+        // hide button show img
+        $(function(){
+            if($('#load-more').click(function(){
+                $('.content_img2').slice(0, 3).show();
+                $('#load-more').hide();
+                $('#artist-container-layout').height(860);
+                $('.artist-content-container-layout').height(780);
+            })
+            );
+
+        });
+
+        // reference
+
+        // --------------------------
+        //         $(function () {
+        // 		x=0;
+
+            
+        //     $('.content_img2').slice(0, 3).show();
+        //     if($('.content_img2').length != 0){
+        //         $('#load-more').show();
+        //     }
+        //     $('#loadMore').on('click', function (e) {
+        //         e.preventDefault();
+        //         x = x+3;
+        //         $(' .content_img2').slice(0, x).slideDown();
+        //     });
+        // });
+        // $ready(document).ready(function (){
+        //     $("").slice(0, 3).show();
+        //     if($(".content_img2:hidden").length != 0){
+        //         $("#load-more").show();
+        //     }
+        //     $("#load-more").on('click', function(e){
+        //         e.preventDefault();
+        //         $(".content_imgw:hidden").slice(0, 9).slideDown();
+        //         if($(".content_imgw:hidden").length == 0){
+        //             $("#load-more").fadeOut('slow');
+        //         }
+        //     })
+        // }
+        // )
+    </script>
+</body>
+</html>

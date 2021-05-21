@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 150vh;
+    width: 100%;
+    background-color: rgb(60, 79, 104);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.navbar {
+    background-color: white;
+    width: 88%;
+    margin: auto;
+    padding: 15px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100px;
+    width: 140px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+  background-color: silver;
+}
+
+@media only screen and (max-width: 1920px) {
+    .container {
+      height: 180vh;
+      width: 100%;
+      background-image: url(img/image.png);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+  }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 15px;
+  }
+
+    .logo {
+        padding: 0 0 0 150px;
+        height: 100px;
+        width: 140px;
+        cursor: pointer;
+    }
+    .navbar {
+      width: 100%;
+      margin: auto;
+      padding: 0 40px 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      float: right;
+  }
+
+}
+
+/* ------------------------------- */
+
+.login-content{
+    width: 1150px;
+    height: 80%;
+    margin: auto;
+    padding: 170px 20px 20px 20px;
+    background-color: rgb(33, 62, 105);
+}
+
+.login-content #title{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+#text2{
+    color: solid black;
+    font-size: 18px;
+    text-align: center;
+}
+
+.content-login-via-facebook{
+    border-radius: 25px;
+    padding: 2px 0 2px 25;
+    margin: 60px 0 0 370px;
+    width: 400px;
+    height: 50px;
+    background-color: #3b5998;
+}
+
+.content-login-via-apple{
+    border-radius: 25px;
+    padding: 2px 0 2px 25;
+    margin: 20px 0 0 370px;
+    width: 400px;
+    height: 50px;
+    background-color: black;
+}
+
+.content-login-via-google{
+    border-radius: 25px;
+    padding: 2px 0 2px 25;
+    margin: 20px 0 0 370px;
+    width: 400px;
+    height: 50px;
+    background-color: white;
+}
+
+.register-btn{
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-account{
+    padding: 15px 10px 10px 30px;
+    border-radius: 25px ;
+    margin: 10px 0 0 75px;
+    width: 230px;
+    height: 30px;
+    background-color: white;
+    border: solid black 1px;
+}
+
+.register-account:hover{
+    background-color: rgb(233, 233, 233);
+    border: solid black 2px;
+}
+
+
+.divider{
+    background-color: white;
+    position: relative;
+    display: block;
+    margin: 25px 0;
+    text-align: center;
+    line-height: 1px;
+    border-top: 1px solid #d9dadc;
+    
+}
+
+.text1{
+    background-color: white;
+    color: white;
+}
+
+.text2{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.login-form{
+    padding: 20px 2px 0 60px;
+    margin: 20px 0 0 28%;
+    width: 450px;
+    height: 330px;
+    background-color: white;
+}
+
+.login-form input{
+    width: 400px;
+    height: 30px;
+    border-style: ridge;
+}
+
+.forgot-password{
+    color: rgb(133, 133, 133);
+}
+
+.content-button-text{
+    position: relative;
+    z-index: 2;
+    margin: -110px 0 0 380px;
+    width: 400px;
+    height: 50px;
+
+}
+
+.tickbox{
+    margin: auto;
+    padding: 10px 0 0 20px;
+}
+
+.btn-log-in{
+    background-color: #1c681e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+  .btn-log-in:hover{
+    background-color: #209123;
+  }
+
+  .statement-account{
+      margin: 15px 0 0 30px;
+      text-align: center;
+  }
+
+  /* -------------------------------------------- */
+
+  .fb {
+    background-color: #3B5998;
+    color: white;
+  }
+
+  .apple{
+      background-color: white;
+      color: white;
+  }
+
+  .google{
+    background-color: blue;
+    color: black;
+  }
+
+  .btn {
+    text-decoration: none; /* remove underline from anchors */
+  }
+
+  .btn:hover {
+    opacity: 1;
+  }
+
+  .media-icon1{
+      padding: 15px 0 0 80px;
+      margin: auto;
+  }
+
+  .media-icon2{
+    padding: 15px 0 0 110px;
+    margin: auto;
+}
+

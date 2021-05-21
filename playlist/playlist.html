@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <script>
+        function show(shown, hidden) {
+          document.getElementById(shown).style.display='block';
+          document.getElementById(hidden).style.display='none';
+          return false;
+        }
+        </script> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="playlist2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+
+       <!-- navbar -->
+       <div class="navbar">
+            <a href="/Web Dev Final Assesment/home/home.html">
+                <img src="../home/img/logo1.png" alt="Logo" class="logo">
+            </a>
+            
+            <ul>
+                <li><a href="/Web Dev Final Assesment/playlist/playlist.html">Playlist</a></li>
+                <li><a href="/Web Dev Final Assesment/artist/artistIndex.html">Artist</a></li>
+                <li><a href="/Web Dev Final Assesment/about us/About Us.html">About</a></li>
+                <li><a href="/Web Dev Final Assesment/subscription/subscription.html">Subscription</a></li>
+                <li><a href="/Web Dev Final Assesment/login/login.html">Login</a></li>
+            </ul>
+        </div>
+
+        <div class="layout-body-1">
+            <div class="inside-frame-body-layout">
+                <div class="left-cell">
+                    <div class="title-text">
+                        <p>Playlist</p>
+                    </div>
+
+                    <div class="title-minitext">
+                        <p>Listen</p>
+                    </div>
+
+                    <hr>
+                    
+                    <div class="column-list-layout">
+                        
+                        <div class="audio-list" id="audio-list">
+                            <div class="song-title">
+                                <p>Bad Guys</p>
+                            </div>
+
+                            <div class="author-minitext">
+                                <p>Billie Eilish</p>
+                            </div>
+                        </div>
+
+                        <div class="audio-list-2" id="audio-list-2">
+                            <div class="song-title">
+                                <p>New Rules</p>
+                            </div>
+
+                            <div class="author-minitext">
+                                <p>Dua Lipa</p>
+                            </div>
+                        </div>
+
+                        <div class="audio-list-2" id="audio-list-2">
+                            <div class="song-title">
+                                <p>positions</p>
+                            </div>
+
+                            <div class="author-minitext">
+                                <p>Ariana Grande</p>
+                            </div>
+                        </div>
+                        
+                        <div class="audio-list-2" id="audio-list-2">
+                            <div class="song-title">
+                                <p>God's Plan</p>
+                            </div>
+
+                            <div class="author-minitext">
+                                <p>Drake</p>
+                            </div>
+                        </div>
+
+                        <div class="audio-list-2" id="audio-list-2">
+                            <div class="song-title">
+                                <p>Peaches ft. Daniel Caesar, Giveon</p>
+                            </div>
+
+                            <div class="author-minitext">
+                                <p>Justin Bieber</p>
+                            </div>
+                        </div>
+
+                        <div class="audio-list-2" id="audio-list-2">
+                            <div class="song-title">
+                                <p>Lose You To Love Me </p>
+                            </div>
+
+                            <div class="author-minitext">
+                                <p>Selena Gomez</p>
+                            </div>
+                        </div>
+
+                        <div class="audio-list-2" id="audio-list-2">
+                            <div class="song-title">
+                                <p>Blank Space</p>
+                            </div>
+
+                            <div class="author-minitext">
+                                <p>Taylor Swift</p>
+                            </div>
+                        </div>
+
+                        <div class="audio-list-2" id="audio-list-2">
+                            <div class="song-title">
+                                <p>Señorita</p>
+                            </div>
+
+                            <div class="author-minitext">
+                                <p>Shawn Mendes, Camila Cabello</p>
+                            </div>
+                        </div>
+
+                        <div class="audio-list-2" id="audio-list-2">
+                            <div class="song-title">
+                                <p>Boy With Luv</p>
+                            </div>
+
+                            <div class="author-minitext">
+                                <p>BTS </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+        
+                </div>
+
+<!-- -----------------playlist ---------------------------------------------------------- -->
+
+                <div class="fix-position-play">
+                    <div class="audio-position2">
+                        <audio id="song2" style="visibility: hidden;" >
+                            <source src="/Web Dev Final Assesment/playlist/songlist/dua lipa new rules.mp3" type="audio/ogg">
+                        </audio> 
+
+                        <audio id="song3" style="visibility: hidden;" >
+                            <source src="/Web Dev Final Assesment/playlist/songlist/arianna grande position.mp3" type="audio/ogg">
+                        </audio> 
+
+                        <audio id="song4" style="visibility: hidden;">
+                            <source src="/Web Dev Final Assesment/playlist/songlist/Drake  Gods Plan.mp3" type="audio/ogg">
+                        </audio> 
+
+                        <audio id="song5" style="visibility: hidden;" >
+                            <source src="/Web Dev Final Assesment/playlist/songlist/Justin Bieber  Peaches ft Daniel Caesar Giveon.mp3" type="audio/ogg">
+                        </audio> 
+
+                        <audio id="song6" style="visibility: hidden;" >
+                            <source src="/Web Dev Final Assesment/playlist/songlist/Selena Gomez  Lose You To Love Me Official Music Video.mp3" type="audio/ogg">
+                        </audio> 
+
+                        <audio id="song7" style="visibility: hidden;" >
+                            <source src="/Web Dev Final Assesment/playlist/songlist/Taylor Swift  Blank Space.mp3" type="audio/ogg">
+                        </audio> 
+
+                        <audio id="song8" style="visibility: hidden;" >
+                            <source src="/Web Dev Final Assesment/playlist/songlist/Shawn Mendes Camila Cabello  Señorita.mp3" type="audio/ogg">
+                        </audio> 
+
+                        <audio id="song9" style="visibility: hidden;" >
+                            <source src="/Web Dev Final Assesment/playlist/songlist/BTS  Boy With Luv feat Halsey Official MV.mp3" type="audio/ogg">
+                        </audio> 
+                        
+                    </div>
+
+                </div>
+
+                <div class="audio-position">
+                    <audio id="song" style="visibility: hidden;">
+                        <source src="/Web Dev Final Assesment/playlist/songlist/billie eilish bad guy.mp3" type="audio/ogg">
+                    </audio> 
+
+
+
+
+                </div>
+
+
+<!-- ------------------ right cell --------------- -->
+
+                <div class="right-cell">
+                    <div class="image-list">
+                        <div role="list">
+                            <div class="artist-image">
+                                <img src="/Web Dev Final Assesment/playlist/artist image/billie.jpg" alt="" class="img">
+
+                            </div>
+
+                            <div class="artist-image-2">
+                                <img src="/Web Dev Final Assesment/playlist/artist image/dua lipa.jpg" alt="" class="img2">
+
+                            </div>
+
+                            <div class="artist-image-2">
+                                <img src="/Web Dev Final Assesment/playlist/artist image/arianna grande.jpg" alt="" class="img3">
+
+                            </div>
+                                
+
+                            <div class="artist-image-2">
+                                <img src="/Web Dev Final Assesment/playlist/artist image/drake.jpg" alt="" class="img4">
+                            </div>
+
+                            <div class="artist-image-2">
+                                <img src="/Web Dev Final Assesment/playlist/artist image/justin biber.jpg" alt="" class="img5">
+                            </div>
+
+                            <div class="artist-image-2">
+                                <img src="/Web Dev Final Assesment/playlist/artist image/selena gomez.jpg" alt="" class="img6">
+                            </div>
+
+                            <div class="artist-image-2">
+                                <img src="/Web Dev Final Assesment/playlist/artist image/taylor swift.jpg" alt="" class="img7">
+                            </div>
+
+                            <div class="artist-image-2">
+                                <img src="/Web Dev Final Assesment/playlist/artist image/shawn mendes.jpg" alt="" class="img8">
+                            </div>
+
+                            <div class="artist-image-2">
+                                <img src="/Web Dev Final Assesment/playlist/artist image/bts.jpg" alt="" class="img9">
+                            </div>
+
+                        </div>
+ 
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+<!-- -----------play button---------------- -->
+
+        <div class="center-icon-play-position">
+            <div class="icon-position-0">
+                <img src="/Web Dev Final Assesment/home/img/play.png" id="icon" class="icon">
+            </div>
+            
+            <div class="icon-position-1">
+                <img src="/Web Dev Final Assesment/home/img/play.png" id="icon2" class="icon">
+            </div>
+
+            <div class="icon-position-1">
+                <img src="/Web Dev Final Assesment/home/img/play.png" id="icon3" class="icon">
+            </div>
+
+            <div class="icon-position-1">
+                <img src="/Web Dev Final Assesment/home/img/play.png" id="icon4" class="icon">
+            </div>
+
+            <div class="icon-position-1">
+                <img src="/Web Dev Final Assesment/home/img/play.png" id="icon5" class="icon">
+            </div>
+
+            <div class="icon-position-1">
+                <img src="/Web Dev Final Assesment/home/img/play.png" id="icon6" class="icon">
+            </div>
+
+            <div class="icon-position-1">
+                <img src="/Web Dev Final Assesment/home/img/play.png" id="icon7" class="icon">
+            </div>
+
+            <div class="icon-position-1">
+                <img src="/Web Dev Final Assesment/home/img/play.png" id="icon8" class="icon">
+            </div>
+
+            <div class="icon-position-1">
+                <img src="/Web Dev Final Assesment/home/img/play.png" id="icon9" class="icon">
+            </div>
+        </div>
+
+    </div>
+
+        <!-- content footer -->
+        <div class="footer-content">
+            <div class="footer-content-row1">
+                  <img src="/Web Dev Final Assesment/home/img/logo1.png" alt="Logo" class="logo-1">
+                
+                  <div class="footer-information-cell-content">
+                    <div class="footer-cell-col1">
+                      <p id="footer-title">Related Links</p><br>
+                      
+                      <a href="/Web Dev Final Assesment/about us/About Us.html" id="btn-footer"><p id="footer-text">About Us</p><br></a>
+                      <a href="/Web Dev Final Assesment/subscription/subscription.html" id="btn-footer"><p id="footer-text">Subscription</p><br></a>
+                      <a href="/Web Dev Final Assesment/artist/artistIndex.html" id="btn-footer"><p id="footer-text">Artist</p><br></a>
+                      <a href="/Web Dev Final Assesment/playlist/playlist.html" id="btn-footer"><p id="footer-text">Playlist</p><br></a>
+                      
+                    </div>
+                  </div>
+    
+                  <div class="footer-icon-list">
+                    <a href="#" class="fa fa-facebook"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="fa fa-twitter"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="fa fa-instagram"></a>
+    
+                  </div>
+    
+                  <div class="copyright-footer">
+                    <div class="footer-copyright-leftcol">
+                      <p id="footer-text2"><a href="#" id="btn-footer">Legal</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                                                
+                        <a href="#" id="btn-footer">Privacy Center</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" id="btn-footer">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" id="btn-footer">Cookies</a>
+                      </p>
+                    </div>
+    
+                    <div class="footer-copyright-rightcol">
+                      <i class="fa fa-globe" style="font-size:20px;color:white"></i>
+                      <div class="position-icon-text1">
+                         <p id="footer-text">Malaysia</p>
+                      </div>
+                     
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+    <script>
+        var img = document.getElementById("img");
+
+         var icon = document.getElementById("icon");
+         var icon2 = document.getElementById("icon2");
+         var icon3 = document.getElementById("icon3");
+         var icon4 = document.getElementById("icon4");
+         var icon5 = document.getElementById("icon5");
+         var icon6 = document.getElementById("icon6");
+         var icon7 = document.getElementById("icon7");
+         var icon8 = document.getElementById("icon8");
+         var icon9 = document.getElementById("icon9");
+
+         var song = document.getElementById("song");
+         var song2 = document.getElementById("song2");
+         var song3 = document.getElementById("song3");
+         var song4 = document.getElementById("song4");
+         var song5 = document.getElementById("song5");
+         var song6 = document.getElementById("song6");
+         var song7 = document.getElementById("song7");
+         var song8 = document.getElementById("song8");
+         var song9 = document.getElementById("song9");
+
+        icon.onclick = function(){
+            if(song.paused){
+                song.play();
+                $('#song').css('visibility', 'visible');
+                $('.img').css('visibility', 'visible');
+                icon.src = "/Web Dev Final Assesment/home/img/pause.png";
+            }else{
+                song.pause();
+                $('.img').css('visibility', 'hidden');
+                $('#song').css('visibility', 'hidden');
+                icon.src = "/Web Dev Final Assesment/home/img/play.png";
+            }
+        }
+
+        icon2.onclick = function(){
+            if(song2.paused){
+                song2.play();
+                $('#song2').css('visibility', 'visible');
+                $('.img2').css('visibility', 'visible');
+                icon2.src = "/Web Dev Final Assesment/home/img/pause.png";
+            }else{
+                song2.pause();
+                $('.img2').css('visibility', 'hidden');
+                $('#song2').css('visibility', 'hidden');
+                icon2.src = "/Web Dev Final Assesment/home/img/play.png";
+            }
+        }
+
+        icon3.onclick = function(){
+            if(song3.paused){
+                song3.play();
+                $('#song3').css('visibility', 'visible');
+                $('.img3').css('visibility', 'visible');
+                icon3.src = "/Web Dev Final Assesment/home/img/pause.png";
+            }else{
+                song3.pause();
+                $('.img3').css('visibility', 'hidden');
+                $('#song3').css('visibility', 'hidden');
+                icon3.src = "/Web Dev Final Assesment/home/img/play.png";
+            }
+        }
+
+        icon4.onclick = function(){
+            if(song4.paused){
+                song4.play();
+                $('#song4').css('visibility', 'visible');
+                $('.img4').css('visibility', 'visible');
+                icon4.src = "/Web Dev Final Assesment/home/img/pause.png";
+            }else{
+                song4.pause();
+                $('.img4').css('visibility', 'hidden');
+                $('#song4').css('visibility', 'hidden');
+                icon4.src = "/Web Dev Final Assesment/home/img/play.png";
+            }
+        }
+
+        icon5.onclick = function(){
+            if(song5.paused){
+                song5.play();
+                $('#song5').css('visibility', 'visible');
+                $('.img5').css('visibility', 'visible');
+                icon5.src = "/Web Dev Final Assesment/home/img/pause.png";
+            }else{
+                song5.pause();
+                $('.img5').css('visibility', 'hidden');
+                $('#song5').css('visibility', 'hidden');
+                icon5.src = "/Web Dev Final Assesment/home/img/play.png";
+            }
+        }
+
+        icon6.onclick = function(){
+            if(song6.paused){
+                song6.play();
+                $('#song6').css('visibility', 'visible');
+                $('.img6').css('visibility', 'visible');
+                icon6.src = "/Web Dev Final Assesment/home/img/pause.png";
+            }else{
+                song6.pause();
+                $('.img6').css('visibility', 'hidden');
+                $('#song6').css('visibility', 'hidden');
+                icon6.src = "/Web Dev Final Assesment/home/img/play.png";
+            }
+        }
+
+        icon7.onclick = function(){
+            if(song7.paused){
+                song7.play();
+                $('#song7').css('visibility', 'visible');
+                $('.img7').css('visibility', 'visible');
+                icon7.src = "/Web Dev Final Assesment/home/img/pause.png";
+            }else{
+                song7.pause();
+                $('.img7').css('visibility', 'hidden');
+                $('#song7').css('visibility', 'hidden');
+                icon7.src = "/Web Dev Final Assesment/home/img/play.png";
+            }
+        }
+
+        icon8.onclick = function(){
+            if(song8.paused){
+                song8.play();
+                $('#song8').css('visibility', 'visible');
+                $('.img8').css('visibility', 'visible');
+                icon8.src = "/Web Dev Final Assesment/home/img/pause.png";
+            }else{
+                song8.pause();
+                $('.img8').css('visibility', 'hidden');
+                $('#song8').css('visibility', 'hidden');
+                icon8.src = "/Web Dev Final Assesment/home/img/play.png";
+            }
+        }
+
+        icon9.onclick = function(){
+            if(song9.paused){
+                song9.play();
+                $('#song9').css('visibility', 'visible');
+                $('.img9').css('visibility', 'visible');
+                icon9.src = "/Web Dev Final Assesment/home/img/pause.png";
+            }else{
+                song9.pause();
+                $('.img9').css('visibility', 'hidden');
+                $('#song9').css('visibility', 'hidden');
+                icon9.src = "/Web Dev Final Assesment/home/img/play.png";
+            }
+        }
+ 
+    </script>
+
+</body>
+</html>

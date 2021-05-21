@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+    /* this important height section */
+.container {
+    height: 110vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar {
+    width: 88%;
+    margin: auto;
+    padding: 15px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid rgb(41, 41, 41) 1px;
+    background: black;
+}
+
+.logo {
+    margin: 0 0 0 140px;
+    height: 100px;
+    width: 140px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+  color: white;
+}
+
+
+@media only screen and (max-width: 1920px) {
+
+    /* this important height section */
+    .container {
+      height: 100vh;
+      width: 100%;
+      background-size: cover;
+      position: relative;
+  }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 15px;
+  }
+
+    .navbar {
+      width: 100%;
+      margin: auto;
+      padding: 0 40px 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      float: right;
+      border: solid rgb(194, 194, 194) 1px;
+  }
+
+}
+
+/* inside content body layout */
+
+.layout-body-1{
+        padding: 9% 10% 10% 2%;
+        height: 900px;
+        z-index: -1;
+        background: linear-gradient(90deg, rgba(128,231,255,1) 5%, rgba(62,23,255,1) 76%);
+        position: relative;
+}
+
+.inside-frame-body-layout{
+    background-color: rgb(255, 255, 255);
+    width: 1200px; height: 900px;
+    margin: 10px 0 0 3px;
+    padding: 20px 0 0 20px;
+}
+
+/* left cell */
+
+.left-cell{
+    background-color: white;
+    width: 600px;
+    height: 800px;
+    margin: 50px 0 0;
+    padding: 10px 0 0 20px;
+}
+
+hr{
+    font-weight: bold;
+    height: 1px;
+}
+
+.title-text{
+    color: black;
+    margin: 5px 0 0 0;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title-minitext{
+    color: black;
+    font-size: 18px;
+    margin: 5px 0 0 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.column-list-layout{
+    background-color: white;
+    width: 580px; height: 650px;
+    margin: 30px 0 0 0;
+    padding: 10px 0 0 10px;
+}
+
+.audio-list{
+  background-color: aqua;
+  width: 580px;
+  height: 60px;
+  margin: 5px 0 0 -5px;
+  box-shadow: 0px 5px rgb(228, 228, 228);
+  padding: 2px 0 0 0;
+}
+
+.audio-list-2{
+  background-color: aqua;
+  width: 580px;
+  height: 60px;
+  margin: 10px 0 0 -5px;
+  box-shadow: 0px 5px rgb(228, 228, 228);
+  padding: 2px 0 0 0;
+}
+
+
+/* -------------icon position ----------- */
+
+.center-icon-play-position{
+  height: 630px;
+  width: 50px;
+  position: relative;
+  margin: -780px 0 0 85px;
+  padding: 1px 0 0 0;
+    justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+/* --------------------------------------------- */
+
+.song-title{
+  margin: 7px 0 0 80px;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.author-minitext{
+  margin: 0px 0 0 80px;
+  font-size: 12px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* --------------------right cell ------------------ */
+
+.right-cell{
+  width: 500px;
+  height: 500px;
+  margin: -650px 0 0 680px;
+  padding: 1px 0 0 0;
+  position: relative;
+}
+
+.artis-image{
+  background-color: black;
+  margin: 0 0 0 0;
+  width: 500px;
+  height: 500px;
+  display: flex;
+}
+
+.artis-image-2{
+  margin: 0 0 0 0;
+  width: 500px;
+  height: 500px;
+  display: flex;
+}
+
+
+.img{
+  width: 500px;
+  height: 500px;
+  image-rendering: pixelated;
+  visibility: hidden;
+  display: flex;
+}
+
+.img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  margin: -501px 0 0 0;
+  image-rendering: pixelated;
+  visibility: hidden;
+}
+
+/* ---------------- audio position ----------- */
+
+.audio-position{
+  z-index: 2;
+  position: absolute;
+  margin: -140px 0 0 800px;
+  display: block;
+}
+
+.audio-position2{
+  z-index: 2;
+  position: absolute;
+  margin: -59px 0 0 0px;
+  display: block;
+}
+
+#song2, #song3, #song4, #song5, #song6, #song7, #song8, #song9{
+  display: block;
+}
+
+#song5, #song6, #song7, #song8, #song9{
+  margin: -54px 0 0 800px;
+}
+
+#song2{
+  margin: -83px 0 0 800px;
+}
+
+#song3{
+  margin: -50px 0 0 800px;
+}
+
+#song4{
+  margin: -55px 0 0 800px;
+}
+
+/* footer content layout */
+/* ----------------------------- */
+
+.logo-1{
+  margin: 15px 0 0 40px;
+  height: 100px;
+  width: 140px;
+  cursor: pointer;
+}
+
+.footer-content{
+  padding: 10px 0 0 0;
+  margin: 560px 0 0 0;
+  height: 500px;
+  width: 1263px;
+  background-color: black;
+}
+
+.footer-content-row1{
+  width: 1100px;
+  height: 270px;
+  margin: 100px 0 0 100px;
+
+}
+
+.footer-information-cell-content{
+  margin: -90px 0 0 190px;
+  width: 900px;
+  height: 230px;
+  padding: 10px;
+}
+
+#footer-title{
+  font-size: 25px;
+  color: rgb(212, 212, 212);
+}
+#footer-text{
+  color: white;
+}
+
+#footer-text2{
+  color: rgb(214, 214, 214);
+  font-size: 12px;
+}
+
+#footer-title, #footer-text #footer-text2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#footer-title, #footer-text:hover{
+  color: greenyellow;
+}
+
+#btn-footer{
+  color: rgb(79, 6, 128);
+  text-decoration: none;
+}
+
+.footer-icon-list{
+  margin: -220px 0 0 800px;
+  padding: 10px;
+  width: 330px;
+  height: 100px;
+}
+
+.copyright-footer{
+  margin: 100px 0 0 0;
+  width: 1100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.footer-copyright-leftcol{
+  margin: 50px 0 0 0;
+  width: 600px;
+  justify-content: space-between;
+}
+
+.footer-copyright-rightcol{
+  margin: -90px 0 0 900px;
+  width: 240px;
+  height: 100px;
+}
+
+.position-icon-text1{
+
+  margin: -35px 0 0 70px;
+  width: 20px;
+}
+
+/* icon footer */
+/* --------------------------- */
+
+.fa {
+  border: solid white 0.1em;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: black;
+  color: white;
+}
+
+.fa-twitter {
+  background: black;
+  color: white;
+}
+
+.fa-instagram {
+  background: black;
+  color: white;
+}

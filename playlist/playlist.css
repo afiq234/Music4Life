@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+    /* this important height section */
+.container {
+    height: 110vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar {
+    width: 88%;
+    margin: auto;
+    padding: 15px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid rgb(41, 41, 41) 1px;
+    background: black;
+}
+
+.logo {
+    margin: 0 0 0 140px;
+    height: 100px;
+    width: 140px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+  color: white;
+}
+
+
+@media only screen and (max-width: 1920px) {
+
+    /* this important height section */
+    .container {
+      height: 130vh;
+      width: 100%;
+      background-size: cover;
+      position: relative;
+  }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 15px;
+  }
+
+    .navbar {
+      width: 100%;
+      margin: auto;
+      padding: 0 40px 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      float: right;
+      border: solid rgb(194, 194, 194) 1px;
+  }
+
+}
+
+/* related information content layout */
+/* ---------------------------------------- */
+
+.information-content-layout{
+    padding: 9% 10% 10% 2%;
+    height: 100px;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(128,231,255,1) 5%, rgba(62,23,255,1) 76%);
+    position: relative;
+}
+
+.frame-cell-content{
+    margin: 10px;
+    padding: 3%;
+    width: 1140px;
+    height: 130px;
+}
+
+.cell-1{
+    margin: -10px 0 0 380px;
+    height: 70px;
+    width: 400px;
+    position: relative;
+}
+
+.title, .login-title{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.information-text, .intro-login-information{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-justify: inter-word;
+    font-weight: 400;
+}
+
+.information-text, .title{
+    color: white;
+}
+
+.cell-2{
+    padding: 10px 0 0 0;
+    width: 970px;
+    height: 85px;
+    margin: 10px 0 0 100px;
+    position: relative;
+}
+
+/* inside frame */
+/* ------------------------------------------------- */
+
+
+/* login spotify body */
+/* --------------------------- */
+
+.playlist-body{
+    padding: 9% 10% 10% 2%;
+    height: 100px;
+    z-index: -1;
+    background: rgb(228, 228, 228);
+    position: relative;
+}
+
+.login-title{
+    margin: -100px 0 0 440px;
+    width: 400px;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    color: rgb(82, 82, 82);
+}
+
+.intro-login-information{
+    text-align: center;
+    margin: 10px 0 0 390px;
+    width: 500px;
+    height: 70px;
+}
+
+                         /* icon for spotify access */
+                    
+.content-login-via-spotify{
+    border-radius: 25px;
+    padding: 2px 0 2px 0;
+    margin: -160px 0 0 519px;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(189, 255, 89);
+}
+
+.media-adjust{
+    padding: 15px 0 0 70px;
+    margin: auto;
+}
+
+.btn-spotify{
+    text-decoration: none; /* remove underline from anchors */
+  }
+
+  .btn-spotify:hover{
+      color: rgb(166, 199, 118);
+    background-color: rgb(167, 255, 35);
+  }
+
+  /* footer content layout */
+/* ----------------------------- */
+
+.footer-content{
+    padding: 10px;
+    margin: -10px;
+    height: 500px;
+    width: 1339px;
+    background-color: black;
+  }
+  
+  .footer-content-row1{
+    width: 1100px;
+    height: 270px;
+    margin: 100px 0 0 100px;
+  
+  }
+  
+  .footer-information-cell-content{
+    margin: -90px 0 0 190px;
+    width: 900px;
+    height: 230px;
+    padding: 10px;
+  }
+  
+  #footer-title{
+    font-size: 25px;
+    color: rgb(212, 212, 212);
+  }
+  #footer-text{
+    color: white;
+  }
+  
+  #footer-text2{
+    color: rgb(214, 214, 214);
+    font-size: 12px;
+  }
+  
+  #footer-title, #footer-text #footer-text2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  #footer-title, #footer-text:hover{
+    color: greenyellow;
+  }
+  
+  #btn-footer{
+    color: rgb(79, 6, 128);
+    text-decoration: none;
+  }
+  
+  .footer-icon-list{
+    margin: -220px 0 0 800px;
+    padding: 10px;
+    width: 330px;
+    height: 100px;
+  }
+  
+  .copyright-footer{
+    margin: 100px 0 0 0;
+    width: 1100px;
+    height: 100px;
+    padding: 10px;
+  }
+  
+  .footer-copyright-leftcol{
+    margin: 50px 0 0 0;
+    width: 600px;
+    justify-content: space-between;
+  }
+  
+  .footer-copyright-rightcol{
+    margin: -90px 0 0 900px;
+    width: 240px;
+    height: 100px;
+  }
+  
+  .position-icon-text1{
+  
+    margin: -35px 0 0 70px;
+    width: 20px;
+  }
+  
+  /* icon footer */
+  /* --------------------------- */
+  
+  .fa {
+    border: solid white 0.1em;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: black;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: black;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: black;
+    color: white;
+  }
+  

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function show(shown, hidden) {
+          document.getElementById(shown).style.display='block';
+          document.getElementById(hidden).style.display='none';
+          return false;
+        }
+        </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account overview</title>
+    <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="/Web Dev Final Assesment/home/home.html"> <img src="/Web Dev Final Assesment/home/img/logo1.png" alt="Logo" class="logo"></a>
+           
+            <ul>
+                <li><a href="/Web Dev Final Assesment/playlist/playlist.html">Playlist</a></li>
+                <li><a href="/Web Dev Final Assesment/artist/artistIndex.html">Artist</a></li>
+                <li><a href="/Web Dev Final Assesment/about us/About Us.html">About</a></li>
+                <li><a href="/Web Dev Final Assesment/subscription/subscription.html">Subscription</a></li>
+                <li><a href="/Web Dev Final Assesment/login/login.html">Login</a></li>
+            </ul>
+        </div>
+
+        <div id="account-detail">
+            <div class="inside-content-col-1">
+                <div class="user-icon">
+                    <img src="/Web Dev Final Assesment/home/img/user.png" alt="user" id="user-icon">
+                </div>
+               
+                <div class="sidebar-col1">
+                    
+                    <a href="#" onclick="return show('account-detail','privacy-setting');" class="nav-btn">
+                        <div class="sidebar-col2">
+                            Account Detail
+                        </div>                        
+                    </a>
+
+                    <a href="#" onclick="return show('privacy-setting','account-detail');" class="nav-btn">
+                        <div class="sidebar-col3">
+                            Privacy Setting
+                        </div>
+                    </a>
+                </div>
+
+                <div class="form-layout">
+                    <div class="title">
+                        <p id="title">Account overview</p>
+                    </div>
+
+                    <div class="form-content">
+                        <div class="title2">
+                            <p id="title2">Profile</p>
+                        </div>
+
+                        <div class="table-content">
+                            <table style="width: 850px;">
+                                <tr>
+                                    <th id="title3">Username</th>
+                                    <th id="information">cm5zkq3brjmgle1vws3hwihm5</th>
+                                </tr>
+                                <tr>
+                                    <th id="title3">Email</th>
+                                    <th id="information">admin@user.com</th>
+                                </tr>
+                                <tr>
+                                    <th id="title3">Date of birth</th>
+                                    <th id="information">June 8 2002</th>
+                                </tr>
+                                <tr>
+                                    <th id="title3">Country of region</th>
+                                    <th id="information">Malaysia</th>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <a href="#" id="edit-btn">
+                            <div class="edit-profile-btn">
+                                EDIT PROFILE
+                            </div>
+                        </a>
+
+                        <div class="register-layout">
+                            <p id="title2">Sign out everywhere</p>
+                            <br>
+                            <p id="text1">This logs you out of Music4Life everywhere you’re logged in, including the mobile,
+                             tablet, web player and desktop apps. This doesn't include partner devices 
+                             (e.g. speakers, games consoles, and TVs), so for those go to your apps page and 
+                             choose REMOVE ACCESS.</p>
+
+                             <div class="box-content">
+                                <p id="text1">Note: It can take up to 1 hour for sign out
+                                     to take effect on the web player.</p>
+                             </div>
+
+                             <a href="/Web Dev Final Assesment/login/register.html" id="edit-btn">
+                                <div class="edit-profile-btn">
+                                    SIGN OUT EVERYWHERE
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- privacy setting page -->
+        <!-- ------------------------------------------------ -->
+
+        <div id="privacy-setting" style="display: none;">
+            <div class="inside-content-col-2">
+                <div class="user-icon">
+                    <img src="/Web Dev Final Assesment/home/img/user.png" alt="user" id="user-icon">
+                </div>
+               
+                <div class="sidebar-col1">
+                    
+                    <a href="#" onclick="return show('account-detail','privacy-setting');" class="nav-btn">
+                        <div class="sidebar-col2">
+                            Account Detail
+                        </div>                        
+                    </a>
+
+                    <a href="#" onclick="return show('privacy-setting','account-detail');" class="nav-btn">
+                        <div class="sidebar-col3">
+                            Privacy Setting
+                        </div>
+                    </a>
+                </div>
+
+                <div class="form-layout2">
+                    <div class="title">
+                        <p id="title">Privacy Setting</p>
+                    </div>
+
+                    <div class="form-content">
+                        <div class="update-content-layout">
+                            <p id="title2">Music4Life Updates</p>
+                        </div>
+
+                        <div class="col2-3-icon">
+                            <div class="icon-ro1">
+                                <i class="fa fa-envelope" ></i>
+                                <div class="position-title-icon">
+                                    <p>Email</p>
+                                </div>
+                                
+                            </div>
+                            <div class="icon-ro2">
+                                <i class="fa fa-mobile-phone" style="font-size:36px"></i><br>
+                                <div class="position-title-icon2">
+                                    <p>Push</p>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <br><br>
+                        <p id="text1">Product News
+                            Getting started, new features and the latest product <br> 
+                            on Music4Life</p>
+                            
+                            <br>
+                        <p id="text1">Music4Life News and Offers
+                            News, promos and events for you</p>
+                        
+                        <div class="update-content-layout2">
+                            <p id="title2">Your Music</p>
+                        </div>
+
+                        <div class="content-agreement">
+                            <p id="text1">Recommended Music
+                                Music we find that we think you’ll like</p>
+                                <br><br>
+                            <p id="text1">New Music
+                                Fresh tracks from artists you follow or might like</p>
+                                <br><br>
+                        
+                            <p id="text1">Playlist Updates: <br>
+                                 A playlist you follow is updated</p>
+                                <br><br>
+
+                            <p id="text1">Concert Notifications
+                                Updates about virtual and live shows by <br> artists you like, online or in places near you</p>
+                                <br><br>    
+
+                                <p id="text1">Artist Updates
+                                    Hear about artists you listen to and artists <br> we think you’ll like</p>
+                                    <br><br>
+                        </div>
+
+                        <form action="#">  
+                            <div class="checkbox-form1">
+                                    <input type="checkbox" id="tick-checkbox">
+                            </div>
+                            <div class="checkbox-form2">
+                                <input type="checkbox" id="tick-checkbox">
+                            </div>
+
+                            <div class="checkbox-form3">
+                                <input type="checkbox" id="tick-checkbox">
+                            </div>
+
+                            <div class="checkbox-form4">
+                                <input type="checkbox" id="tick-checkbox">
+                            </div>
+
+                            <div class="checkbox-form5">
+                                <input type="checkbox" id="tick-checkbox">
+                            </div>
+
+                            <div class="checkbox-form6">
+                                <input type="checkbox" id="tick-checkbox">
+                            </div>
+
+                            <div class="checkbox-form7">
+                                <input type="checkbox" id="tick-checkbox">
+                            </div>
+
+                            <div class="checkbox-form8">
+                                <input type="checkbox" id="tick-checkbox">
+                            </div>
+
+                            <div class="checkbox-form9">
+                                <input type="checkbox" id="tick-checkbox">
+                            </div>
+
+                            <div class="checkbox-form10">
+                                <input type="checkbox" id="tick-checkbox">
+                            </div>
+
+                            <div class="checkbox-form11">
+                                <input type="checkbox" id="tick-checkbox">
+                            </div>
+
+                            <div class="checkbox-form12">
+                                <input type="checkbox" id="tick-checkbox">
+                            </div>
+
+                            <div class="checkbox-form13">
+                                <input type="checkbox" id="tick-checkbox">
+                            </div>
+
+                            <div class="checkbox-form14">
+                                <input type="checkbox" id="tick-checkbox">
+                            </div>
+                        </form>    
+
+                        <div class="btn-content">
+                            <a href="#" id="save-btn">
+                                <div class="save-profile-btn">
+                                    SAVE
+                                </div>
+                            </a>
+                        </div>
+                        
+
+                    </div>
+                </div>
+        </div>
+
+    </div>
+
+            <!-- content footer -->
+            <div class="footer-content">
+                <div class="footer-content-row1">
+                      <img src="/Web Dev Final Assesment/home/img/logo1.png" alt="Logo" class="logo-1">
+                    
+                      <div class="footer-information-cell-content">
+                        <div class="footer-cell-col1">
+                          <p id="footer-title">Related Links</p><br>
+                          
+                          <a href="/Web Dev Final Assesment/about us/About Us.html" id="btn-footer"><p id="footer-text">About Us</p><br></a>
+                          <a href="/Web Dev Final Assesment/subscription/subscription.html" id="btn-footer"><p id="footer-text">Subscription</p><br></a>
+                          <a href="/Web Dev Final Assesment/artist/artistIndex.html" id="btn-footer"><p id="footer-text">Artist</p><br></a>
+                          <a href="/Web Dev Final Assesment/playlist/playlist.html" id="btn-footer"><p id="footer-text">Playlist</p><br></a>
+                          
+                        </div>
+                      </div>
+        
+                      <div class="footer-icon-list">
+                        <a href="#" class="fa fa-facebook"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" class="fa fa-twitter"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" class="fa fa-instagram"></a>
+        
+                      </div>
+        
+                      <div class="copyright-footer">
+                        <div class="footer-copyright-leftcol">
+                          <p id="footer-text2"><a href="#" id="btn-footer">Legal</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                                                
+                            <a href="#" id="btn-footer">Privacy Center</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#" id="btn-footer">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#" id="btn-footer">Cookies</a>
+                          </p>
+                        </div>
+        
+                        <div class="footer-copyright-rightcol">
+                          <i class="fa fa-globe" style="font-size:20px;color:white"></i>
+                          <div class="position-icon-text1">
+                             <p id="footer-text">Malaysia</p>
+                          </div>
+                         
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+</body>
+
+</html>
